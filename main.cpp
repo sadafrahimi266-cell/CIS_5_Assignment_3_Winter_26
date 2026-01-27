@@ -10,21 +10,25 @@ int sum = 0;
 int passCout = 0;
 int aCount = 0;
 int lowest = scores[0];
-int heighest = scores[0];
+int highest = scores[0];
 for (int i = 0; i < 30; i++) {
 sum += scores[i];
 
-if (score[i] >=60) {
-passCount++;
+if (scores[i] >=60) {
+    passCout = 0;    
 }
-if (score[i] >=90) {
+if (scores[i] >=90) {
 aCount++;
 }
-if (score[i] < lowest) {
+if (scores[i] < lowest) {
 lowest = scores[i];
 }
-if (score[i] < highest) {
+if (scores[i] < highest) {
 highest = scores[i];
+    }
+}
+    
+
 {
 double average = sum / 30.0;
 
@@ -33,11 +37,11 @@ cout << "Number of students: 30" << endl;
     cout << "Average score:      " << average << endl;
     cout << "Highest score:      " << highest << endl;
     cout << "Lowest score:       " << lowest << endl;
-    cout << "Students passed:    " << passCount << "  (>= 60)" << endl;
+    cout << "Students passed:    " << passCout << "  (>= 60)" << endl;
     cout << "Students with A:    " << aCount << "  (>= 90)" << endl;
 
 cout << "Scores in original order:" << endl;
-    for (int s : scores) {
+    for (int s : scores) 
         cout << s << " ";
     }
     cout << endl;
@@ -48,4 +52,6 @@ cout << "Scores in reverse order:" << endl;
     cout << endl;
 
     return 0;
-}
+    
+     }
+    
