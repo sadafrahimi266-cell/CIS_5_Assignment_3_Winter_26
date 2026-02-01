@@ -26,6 +26,4 @@ Compile and run `main.cpp` using a C++ compiler or an online IDE.
 ## Video explanation
 Video walkthrough of the program logic:  
 Video link
-https://youtu.be/iYPzabIQ3uE
-Filename
-video1398204135.mp4
+https://youtu.be/TRMm9o0YWtI?si=z9zC2yWWWV0Nda6u
